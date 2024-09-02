@@ -1,0 +1,63 @@
+.background-image {
+    background-image: url('assets/bg.png'); /* Replace 'your-image.jpg' with the path to your image */
+
+    background-position: center;
+   
+    background-size: cover;
+    
+    
+   
+    
+    
+}
+.banner{
+    overflow: hidden;
+    height: 100vh; /* Full height */
+    position: relative;
+
+
+}
+.banner .product{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left: 0px;
+    display: flex;
+    
+    
+}
+.banner .product .soda{
+    background: url(assets/freepik-export-202408050822417if4.png),
+    var(--url) var(--left)0;
+    /* margin-top: 100px; */
+    background-size: auto 100%;
+    width: 180px;
+    /* height: 300px; */
+    aspect-ratio: 2/3.7;
+    background-blend-mode: multiply;
+    mask-image:url(assets/freepik-export-202408050822417if4.png) ;
+    mask-size: auto 100%;
+    transition: 5s;
+    position: absolute;
+    
+
+
+
+
+}
+.banner .product:hover{
+    --left: -1000px;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.banner .product .soda:nth-child(2){
+    opacity: 0;
+}
+.banner .product:hover .soda:nth-child(2){
+    opacity: 1;
+}
